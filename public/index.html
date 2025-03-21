@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHAT APPLICATION</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
 </head>
 <body>
+    <div class="title">MY CHAT </div>
     <div class="main">
         <div class="name">
             <i class="fa-solid fa-user"></i>
@@ -14,14 +19,14 @@
         </div>
         <div class="chat-area">
             <ul class="message-container">
-                <li class="message-lef">
+                <li class="message-left">
                     <p class="message">
                         test message
                     </p>
-                    <span>me . 25 july 10:30</span>
+                    <span>Ali . 25 july 10:30</span>
                 </li>
 
-                <li class="message-right"></li>
+                <li class="message-right">
                     <p class="message">
                         test message
                     </p>
@@ -35,13 +40,13 @@
             </ul>
 
             <form class="message-form" id="message-form">
-                <input type="text" name="message" id="message">
+                <input type="text" name="message-input" id="message-input" class="message-input">
                 <div class="v-divider"></div>
-                <button type="submit">send <i class="fa-solid fa-paper-plane"></i></button>
+                <button type="submit" class="send-button">send <i class="fa-solid fa-paper-plane"></i></button>
             </form>
 
         </div>
-        <h3 class="clients-total" id="clients-total"> total clients : 0</h3>
     </div>
+    <h3 class="clients-total" id="clients-total"> total clients : 0</h3>
 </body>
 </html>
